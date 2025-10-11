@@ -33,11 +33,11 @@ fi
 echo "Activating virtual environment..."
 source venv/bin/activate
 
-# Install dependencies
+# Install dependencies and package
 echo ""
-echo "📦 Installing dependencies..."
+echo "📦 Installing dependencies and package in development mode..."
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -e .
 
 echo ""
 echo "✅ Development environment setup complete!"
@@ -48,12 +48,12 @@ echo "   export LINEAR_API_TOKEN=\"your_linear_api_token_here\""
 echo "   # Or copy .env.example to .env and edit it"
 echo ""
 echo "2. Test the installation:"
-echo "   python linear_search.py --teams"
+echo "   linear --teams"
 echo ""
 echo "3. Start contributing:"
 echo "   - Review CONTRIBUTING.md for detailed guidelines"
 echo "   - Check out the examples/ directory for usage patterns"
-echo "   - Run 'python linear_search.py --help' for full command reference"
+echo "   - Run 'linear --help' for full command reference"
 echo ""
 echo "💡 To activate the virtual environment in future sessions:"
 echo "   source venv/bin/activate"

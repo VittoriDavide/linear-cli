@@ -42,32 +42,57 @@ linear --assignees  # See all users
 - Linear workspace access
 - Linear API token
 
-### Setup Steps
+### 🚀 Quick Installation (Recommended)
 
-1. **Clone and Navigate**
-   ```bash
-   git clone https://github.com/vittoridavide/linear-cli.git
-   cd linear-cli
-   ```
+**Install via pip (coming soon to PyPI):**
+```bash
+pip install linear-cli
+```
 
-2. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Install directly from GitHub:**
+```bash
+pip install git+https://github.com/vittoridavide/linear-cli.git
+```
 
-3. **Set Up Alias (Recommended)**
-   ```bash
-   chmod +x setup_alias.sh
-   ./setup_alias.sh
-   # Restart terminal or run: source ~/.zshrc
-   ```
+After installation, you can use the `linear` command directly:
+```bash
+linear --help
+```
 
-4. **Get Linear API Token**
+### 🔧 Development Installation
+
+**Option 1: Quick Setup (Recommended)**
+```bash
+git clone https://github.com/vittoridavide/linear-cli.git
+cd linear-cli
+./dev-setup.sh
+```
+
+**Option 2: Manual Setup**
+```bash
+git clone https://github.com/vittoridavide/linear-cli.git
+cd linear-cli
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -e .
+```
+
+**Option 3: Legacy Method (Clone and Run)**
+```bash
+git clone https://github.com/vittoridavide/linear-cli.git
+cd linear-cli
+pip install -r requirements.txt
+# Use: python linear_search.py instead of linear
+```
+
+### 🔑 Authentication Setup
+
+1. **Get Linear API Token**
    - Go to Linear → Settings → API → Personal API tokens
    - Create new token with read/write permissions
    - Copy the token
 
-5. **Configure Authentication**
+2. **Configure Authentication**
    ```bash
    export LINEAR_API_TOKEN="your_linear_api_token_here"
    # Add to ~/.zshrc or ~/.bashrc for persistence
