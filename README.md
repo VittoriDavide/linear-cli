@@ -44,9 +44,9 @@ linear --assignees  # See all users
 
 ### 🚀 Quick Installation (Recommended)
 
-**Install via pip (coming soon to PyPI):**
+**Install via pip (LIVE on PyPI!):**
 ```bash
-pip install linear-cli
+pip install linear-ticket-cli
 ```
 
 **Install directly from GitHub:**
