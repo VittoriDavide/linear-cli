@@ -20,8 +20,8 @@ class LinearTicketCli < Formula
   end
 
   resource "python-levenshtein" do
-    url "https://files.pythonhosted.org/packages/source/p/python-levenshtein/python-levenshtein-0.21.1.tar.gz"
-    sha256 "74f3c9a3c524c2d6d6c7e8e24f4b2eb65001eddb654be8956b6e3cfcd52a90b6"
+    url "https://files.pythonhosted.org/packages/13/f6/d865a565b7eeef4b5f9a18accafb03d5730c712420fc84a3a40555f7ea6b/python_levenshtein-0.27.1.tar.gz"
+    sha256 "3a5314a011016d373d309a68e875fd029caaa692ad3f32e78319299648045f11"
   end
 
   def install
