@@ -11,12 +11,12 @@ class LinearTicketCli < Formula
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/source/r/requests/requests-2.31.0.tar.gz"
-    sha256 "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"
+    sha256 "942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"
   end
 
   resource "fuzzywuzzy" do
     url "https://files.pythonhosted.org/packages/source/f/fuzzywuzzy/fuzzywuzzy-0.18.0.tar.gz"
-    sha256 "45016e92264112e1b6df5c9fcddc49d1e6e4a0eb1f7b48a4b9c0b4f6e7b3d3d2"
+    sha256 "45016e92264780e58972dca1b3d939ac864b78437422beecebb3095f8efd00e8"
   end
 
   resource "python-levenshtein" do
